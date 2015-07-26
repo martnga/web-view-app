@@ -16,6 +16,8 @@ public class MainActivity extends ActionBarActivity {
 
         String url = "http://tecknorial.com/";
         WebView view = (WebView) this.findViewById(R.id.webView);
+        view.getSettings().setJavaScriptEnabled(true);
+        view.loadUrl(url);
     }
 
     @Override
